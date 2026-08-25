@@ -23,15 +23,25 @@
   --fundo-card : #ffffff;
 
 }
-
+body.escuro {
+  --fundo-principal: #111116;     /* Preto com um leve toque aristocrático */
+  --texto: #e4e4e7;               
+  --texto-inverso: #111116;       
+  --destaque: #a855f7;            /* Roxo/Violeta moderno */
+  --destaque-inverso: #7e22ce;    
+  --fundo-card: #1c1c24;          /* Cinza escuro com subtom neutro para os cards */
+}
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: background-color 0.5s, color 0.5;
 
 
 }
+
+
 
 header {
   background-color: var(--destaque);
